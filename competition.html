@@ -1,0 +1,296 @@
+<html>
+
+
+<head>
+
+<title>
+Competitions
+</title>
+
+<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+<link rel="icon" href="Images/drill.png">
+
+<style>
+
+	.navbar {
+		position: relative;
+		height: 13vh;
+		background: black;
+		opacity: 0.8;
+		margin-top: 89px;
+		z-index: 3;
+	}
+
+	.hero-image {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Images/competition.jpeg"); <!-- move left a bit somehow -->
+		height: 72%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		align: center;
+	}
+
+	.hero-text {
+		color: white;
+		padding: 0px;
+		font-size: 45px;
+		text-shadow: 1px 2px black;
+		text-align: center;
+		position: absolute;
+		top: 40%;
+		left: 38%;
+	}
+	
+	.dot {
+		height: 10px;
+		width: 10px;
+		margin: 5px;
+		background-color: white;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	
+	.dots {
+		vertical-align: center;
+		padding-left: 580px;
+		padding-top: 235px;
+	}
+	
+	.regionalText {
+		float: left;
+		padding: 20px;
+		width: 50%;
+		text-align: center;
+	}
+	
+	.provincialText {
+		float: right;
+		padding: 20px;
+		width: 50%;
+		text-align: center;
+		padding-top: 0px;
+	}
+	
+	.regionalVideo {
+		align: center;
+		float: right;
+		vertical-align: top;
+		padding: 20px;
+	}
+	
+	.provincialVideo {
+		align: center;
+		float: left;
+		vertical-align: middle;
+		padding: 20px;
+	}
+	
+	.line {
+		background-color: #5AB1BB;
+		width: 100px;
+		height: 3px;
+		align: left;
+		margin-bottom: -8px;
+		margin-top: -11px;
+		border: none;
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<div class = "hero-image"> <!-- change it to a slideshow maybe --> 
+		<div class="hero-text">
+			Competitions
+		</div>
+			<div class="dots">
+				<span class="dot"> </span>
+				<span class="dot"> </span>
+				<span class="dot"> </span>
+				<span class="dot"> </span>
+			</div>
+		
+		<div class="navbar">
+		<center>
+	
+			<a href="https://75aircadets.ca/"> <img src="Images/logo.png" alt="" class="logo" style="padding-right: 1px"> </a>
+
+			<div class="navbarText" onmouseover="show(1)" onmouseout="hide(1)">
+				<div class="navbarCenter" onmouseover="show(1)" onmouseout="hide(1)"> <a href="index.html" class="navLink"> Home </a> </div>
+					<div class="dropdown" id="dropdown1">
+						<div class="dropdownContent"> <a href="index.html#about" class="navLink"> About Us </a> </div>
+						<div class="dropdownContent"> <a href = "index.html#event" class="navLink"> Event Calendar <a/> </div>
+					</div>
+			</div>
+		
+			<div class="navbarText" onmouseover="show(2)" onmouseout="hide(2)">
+				<div class="navbarCenter"> <a href = "practice.html" class="navLink"> Practices </a> </div>
+					<div class="dropdown" id="dropdown2">
+						<div class="dropdownContent"> <a href = "practice.html#covid" class="navLink"> Covid Updates </a> </div>
+						<div class="dropdownContent"> <a href = "practice.html#fun" class="navLink"> Fun Activities </a> </div>
+					</div>
+			</div>
+		
+			<div class="navbarText" onmouseover="show(3)" onmouseout="hide(3)" id="active">
+				<div class="navbarCenter"> <a href = "competition.html" class="navLink"> Competitions </a> </div>
+					<div class="dropdown" id="dropdown3">
+						<div class="dropdownContent"> <a href = "competition.html#regional" class="navLink"> Regionals </a> </div>
+						<div class="dropdownContent"> <a href = "competition.html#provincial" class="navLink"> Provincials </a> </div>
+					</div>
+			</div>
+
+			<div class="navbarText" onmouseover="show(4)" onmouseout="hide(4)">
+				<div class="navbarCenter"> <a href = "testimonial.html" class="navLink"> Testimonials </a> </div>
+			</div>
+		
+			<div class="navbarText" onmouseover="show(5)" onmouseout="hide(5)">
+				<div class="navbarCenter"> <a href="camps.html" class="navLink"> Summer Camps </a> </div>
+					<div class = "dropdown" id="dropdown5">
+						<div class="dropdownContent"> <a href="camps.html#basic" class="navLink"> Basic Drill and Cerimonial </a> </div>
+						<div class = "dropdownContent"> <a href = "camps.html#instructor" class="navLink"> Dril and Cerimonial Instructor </a> </div>
+					</div>
+			</div>
+
+			<div class="navbarText" onmouseover="show(6)" onmouseout="hide(6)">
+				<div class="navbarCenter"> <a href = "photos.html" class="navLink"> Photo Albums </a> </div>
+			</div>
+		
+			<div class="navbarText" onmouseover="show(7)" onmouseout="hide(7)">
+				<div class="navbarCenter"> <a href="coaches.html" class="navLink"> Coaches </a> </div>
+					<div class = "dropdown" id="dropdown7">
+						<div class="dropdownContent"> <a href="coaches.html#west" class="navLink"> OCdt West </a> </div>
+						<div class = "dropdownContent"> <a href = "coaches.html#pitman" class="navLink"> CI Pitman </a> </div>
+						<div class = "dropdownContent"> <a href = "coaches.html#ruttan" class="navLink"> MS Ruttan </a> </div>
+					</div>
+			</div>
+		</div>
+	</center>	
+	</div>
+
+
+<script type="text/javascript">
+      function show(x) {
+        document.getElementById('dropdown' + x).style.display = "block"
+      }
+
+      function hide(x) {
+          document.getElementById('dropdown' + x).style.display = "none"
+      }
+
+    </script>
+	
+	
+</body>
+
+
+<body>
+ 
+	<div class="regionals" id="regional">
+	
+		<div class="regionalVideo">
+			 <video width="500" height="300" controls>
+				<source src="Images/regionalMovie.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<center>
+		<div class="regionalText">
+			<h2> Regionals </h2>
+			<hr class="line">
+			<p> The Ottawa Regional Drill Competition is generally held at Hangar 11 near the Ottawa International Airport. Strathcona, walsh and improv teams
+			from all over the Ottawa region participate in this competition. First, the teams uniforms are inspected by one or two military personel who are well 
+			trained in drill, dress and deportment. Then their drill sequence(s) are judged by another group of military personel. Finally during closing parade,
+			the teams are awarded and some are selected to move on to the provincial competition. </p>
+		</div> 
+		</center>
+		
+	</div>
+	
+	<br>
+	<br>
+	
+	<div class="provincials" id="provincial">
+	
+		<div class="provincialVideo">
+			<video width="500" height="300" controls>
+				<source src="Images/provincialMovie.mp4" type="video/mp4">
+			</video>
+		</div>
+		
+		<div class="provincialText">
+			<h2> Provincials </h2>
+			<hr class="line">
+			<p> The provincial competition consists of the top three ranking teams from the Ottawa and Quebec regions. This competition is usually held in St Jean
+			Quebec. It runs very similar to the regional competition, however there are more judges and more pressure! The 75 drill team typically travels to the
+			competition in a coach bus, wearing formal dress and later changing into cerimonial uniform. The team spends the whole day there, watching other sequences
+			as well as presenting theirs. It is a very exciting competition! </p>
+		</div>
+		
+	</div>
+
+
+</body>
+
+
+<body>
+
+	<div class="footer">
+	
+		<div class="contact">
+			<h2> Contact Us </h2>
+			
+				<div class="inLine">
+					<img src="Images/logo.png" class="logoImage" style="width: 40px; height: 50px;">
+					<p class="linkText"> <a href="https://75aircadets.ca/" class="footLink"> www.75aircadets.ca </a> </p>
+				</div>
+				
+				<div class="inLine">
+					<img src="Images/fbLogo.png" class="logoImage" style="width: 40px; height: 40px;">
+					<p class="linkText"> <a href="https://www.facebook.com/75Squadron/" class="footLink"> @75Squadron </a> </p>
+				</div>
+				
+				<div class="inLine">
+					<img src="Images/igLogo.png" class="logoImage" style="width: 40px; height: 40px;">
+					<p class="linkText"> <a href="https://www.instagram.com/75squadron/?hl=en" class="footLink"> @75Squadron </a> </p>
+				</div>
+				
+				<div class="inLine">
+					<img src="Images/locationLogo.png" class="logoImage" style="width: 40px; height: 40px;">
+					<p class="linkText"> <a href="https://www.google.ca/maps/place/715+Brian+Good+Ave,+Manotick,+ON+K4M+0E2/@45.2670977,-75.6952848,17z/data=!4m13!1m7!3m6!1s0x4ccde31e41e45631:0xd775ef8b7d2aa8b2!2s715+Brian+Good+Ave,+Manotick,+ON+K4M+0E2!3b1!8m2!3d45.2670977!4d-75.6930961!3m4!1s0x4ccde31e41e45631:0xd775ef8b7d2aa8b2!8m2!3d45.2670977!4d-75.6930961" class="footLink"> 715 Brian Good Ave </a> </p>
+				</div>
+		</div>
+		
+		<div class="navigation">
+			<h2> Navigate </h2>
+			
+				<div class="footLinks">
+					<a href="index.html" class="footLink"> <p> Home </p> </a>
+					<a href="practice.html" class="footLink"> <p> Practices </p> </a>
+					<a href="competition.html" class="footLink"> <p> Competitions </p> </a>
+					<a href="testimonial.html" class="footLink"> <p> Testimonials </p> </a>			
+					<a href="camps.html" class="footLink"> <p> Summer Camps </p> </a>
+					<a href="photos.html" class="footLink"> <p> Photo Albums </p> </a>
+					<a href="coaches.html" class="footLink"> <p> Coaches </p> </a>
+				</div>			
+		</div>
+		
+		<div class="sign">
+			<h2> Don't Miss out! </h2>
+			<p> Subscribe to our newsletter! </p>
+			
+			<form>
+				<input type="text" name="email" width="100%">
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	
+	</div>
+
+</body>
+
+
+
+</html>

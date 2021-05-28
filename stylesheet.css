@@ -1,0 +1,120 @@
+body {
+	margin: 0px;
+	font-family: verdana;
+	background-color: #fafafa;
+}
+
+#active {
+		background-color: #474350;
+		padding  
+}
+
+.navLink {
+	text-decoration: none;
+	color: white;
+}
+ 
+.navbarText {
+	display: inline-block;
+	font-size: 15.5px;
+	padding: 0% 2.5%;
+	width: 5%;
+	height: 13vh;
+	position: relative;
+}
+
+.logo {
+	height: 95%;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+}
+
+.navbarCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: 0.5s;
+}
+
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	min-width: 150%;
+	padding: 10px;
+	text-align: left;
+	display: none;
+	transition: 0.5s;
+	background-color: black;
+	color: white;
+}
+
+.dropdownContent {
+	display: block;
+	text-align: center;
+	padding: 4px 2px;
+}
+
+.navbarText:hover {
+	background-color: #474350;
+}
+
+.dropdownContent:hover {
+	background-color: #474350;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;	
+}
+
+.sticky + .content {
+	padding: 0;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
+	width: 96.8%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.contact {
+	margin-bottom: -20px;
+}
+
+.inLine {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	text-align: center;
+	padding-left: 70px;
+	padding-top: -10px;
+	margin-bottom: 10px;
+}
+
+.logoImage {
+	padding-right: 50px;
+}
+
+.linkText {
+	margin-left: -200px;
+}
+
+.footLink {
+	text-decoration: none;
+	color: white;
+}
+
+.footLink:hover {
+	color: #474350;
+}
